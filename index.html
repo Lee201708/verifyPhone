@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>查询手机号码归属地</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="static/css/base.css" />
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/base.js"></script>
+    <style>
+        #phoneInfo{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bodyBox">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <from method="post" class="form-inline">
+                    <div class="form-group col-md-10">
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Amount" id="phone-num">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success col-md-2" id="query">查询</button>
+                </from>
+            </div>
+        </div>
+        <div id="phoneInfo">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="col-md-6">手机号码</div>
+                    <div class="col-md-6" id ="query-phone" >13650382718</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="col-md-6">归属地</div>
+                    <div class="col-md-6" id="query-pro">广东</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="col-md-6">运营商</div>
+                    <div class="col-md-6" id="query-cat">中国移动</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="col-md-6">其他</div>
+                    <div class="col-md-6" id="query-other">来自阿里巴巴</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

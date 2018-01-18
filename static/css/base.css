@@ -1,0 +1,20 @@
+*{
+    font-size: 25px;
+}
+[class^="col"] {
+    /*border-left: 1px solid #000000;*/
+    /*border-right: 1px solid #000000;*/
+}
+.bodyBox{
+    margin-top: 50px;
+}
+.form-control{
+    border-radius: 5px!important;
+}
+#phoneInfo{
+    margin-top: 20px;
+}
+#phoneInfo .row > div[class^="col"]{
+    border-bottom: 1px solid #5e5e5e;
+    color: #5e5e5e;
+}
